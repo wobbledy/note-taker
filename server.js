@@ -21,7 +21,7 @@ app.use(express.static('public'));
 );
 
 
-// Gets the files frome notes.html
+// Gets the file from notes.html
 app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, 'public/notes.html'))
 )
